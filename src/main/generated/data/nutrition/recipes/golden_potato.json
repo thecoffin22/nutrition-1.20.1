@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "R": {
+      "item": "minecraft:potato"
+    },
+    "S": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SSS"
+  ],
+  "result": {
+    "item": "nutrition:golden_potato"
+  },
+  "show_notification": true
+}

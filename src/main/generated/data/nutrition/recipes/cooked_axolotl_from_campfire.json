@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 250,
+  "experience": 0.15,
+  "ingredient": {
+    "item": "nutrition:axolotl"
+  },
+  "result": "nutrition:cooked_axolotl"
+}

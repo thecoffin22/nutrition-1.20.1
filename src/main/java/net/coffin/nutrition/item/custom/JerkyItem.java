@@ -1,0 +1,21 @@
+package net.coffin.nutrition.item.custom;
+
+import net.coffin.nutrition.item.ModItems;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.world.World;
+
+public class JerkyItem extends Item {
+    public JerkyItem(Settings settings) {
+        super(settings);
+    }
+
+    @Override
+    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
+        ItemStack itemStack = super.finishUsing(stack, world, user);
+        return user instanceof PlayerEntity && ((PlayerEntity)user).getAbilities().creativeMode ? itemStack : new ItemStack(ModItems.NIBBLED_JERKY);
+    }
+}

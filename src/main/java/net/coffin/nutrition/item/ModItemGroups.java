@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_POTATO);
                         entries.add(ModItems.GOLDEN_BEETROOT);
                         entries.add(ModItems.JERKY);
+                        entries.add(ModItems.NIBBLED_JERKY);
                         entries.add(ModItems.COOKED_TROPICAL_FISH);
                         entries.add(ModItems.COOKED_PUFFERFISH);
                         entries.add(ModItems.AXOLOTL);
@@ -28,6 +29,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.MAGMA_CREAM_SOUP);
                         entries.add(ModItems.SLIME_SOUP);
+
+                        entries.add(ModItems.GOO_JUICE);
 
                     }).build());
 

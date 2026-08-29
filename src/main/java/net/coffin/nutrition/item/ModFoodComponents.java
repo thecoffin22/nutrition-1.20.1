@@ -19,6 +19,8 @@ public class ModFoodComponents {
 
     public static final FoodComponent JERKY = new FoodComponent.Builder().hunger(2).saturationModifier(0.35f)
             .snack().build();
+    public static final FoodComponent NIBBLED_JERKY = new FoodComponent.Builder().hunger(2).saturationModifier(0.15f)
+            .snack().build();
 
     public static final FoodComponent COOKED_TROPICAL_FISH = new FoodComponent.Builder().hunger(5).saturationModifier(0.6f)
             .build();
@@ -44,6 +46,11 @@ public class ModFoodComponents {
             .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20 * 16, 1), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 16), 1.0f)
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 8, 2), 0.05f)
+            .build();
+
+    //Bottles
+    public static final FoodComponent GOO_JUICE = new FoodComponent.Builder().hunger(5).saturationModifier(0.1f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20 * 12, 0), 1.0f)
             .build();
 
     private static FoodComponent.Builder createSmallStew(int hunger) {

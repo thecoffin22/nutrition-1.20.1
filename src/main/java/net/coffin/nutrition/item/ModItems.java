@@ -24,6 +24,8 @@ public class ModItems {
             .maxCount(64)));
     public static final Item JERKY = registerItem("jerky", new Item(new FabricItemSettings().food(ModFoodComponents.JERKY)
             .maxCount(64)));
+    public static final Item NIBBLED_JERKY = registerItem("nibbled_jerky", new Item(new FabricItemSettings().food(ModFoodComponents.NIBBLED_JERKY)
+            .maxCount(64)));
     public static final Item COOKED_TROPICAL_FISH = registerItem("cooked_tropical_fish", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_TROPICAL_FISH)
             .maxCount(64)));
     public static final Item COOKED_PUFFERFISH = registerItem("cooked_pufferfish", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_PUFFERFISH)
@@ -38,11 +40,15 @@ public class ModItems {
     public static final Item SLIME_SOUP = registerItem("slime_soup", new SlimeSoupItem(new FabricItemSettings().food(ModFoodComponents.SLIME_SOUP)
             .maxCount(16)));
 
+    public static final Item GOO_JUICE = registerItem("goo_juice", new SlimeSoupItem(new FabricItemSettings().food(ModFoodComponents.GOO_JUICE)
+            .maxCount(16)));
+
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {
         entries.add(LIGHT_GOLDEN_APPLE);
         entries.add(GOLDEN_POTATO);
         entries.add(GOLDEN_BEETROOT);
         entries.add(JERKY);
+        entries.add(NIBBLED_JERKY);
         entries.add(COOKED_TROPICAL_FISH);
         entries.add(COOKED_PUFFERFISH);
         entries.add(AXOLOTL);
@@ -50,6 +56,8 @@ public class ModItems {
 
         entries.add(MAGMA_CREAM_SOUP);
         entries.add(SLIME_SOUP);
+
+        entries.add(GOO_JUICE);
     }
 
     private static Item registerItem(String name, Item item) {

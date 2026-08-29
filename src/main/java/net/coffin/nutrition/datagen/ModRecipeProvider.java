@@ -111,5 +111,19 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
 
+        //Axolotl Bucket
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.AXOLOTL_BUCKET, 1)
+                .input(Items.WATER_BUCKET)
+                .input(ModItems.AXOLOTL)
+                .input(Items.GHAST_TEAR)
+                .criterion(hasItem(Items.GHAST_TEAR), conditionsFromItem(Items.GHAST_TEAR))
+                .offerTo(exporter);
+
+        //Bottled
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOO_JUICE, 1)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.SLIME_BALL)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
     }
 }

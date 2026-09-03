@@ -3,12 +3,16 @@
   "item.nutrition.golden_potato": "Golden Potato",
   "item.nutrition.golden_beetroot": "Golden Beetroot",
   "item.nutrition.jerky": "Jerky",
+  "item.nutrition.nibbled_jerky": "Nibbled Jerky",
   "item.nutrition.cooked_tropical_fish": "Cooked Tropical Fish",
   "item.nutrition.cooked_pufferfish": "Cooked Pufferfish",
   "item.nutrition.axolotl": "Raw Axolotl",
   "item.nutrition.cooked_axolotl": "Cooked Axolotl",
+
   "item.nutrition.magma_cream_soup": "Magma Cream Soup",
   "item.nutrition.slime_soup": "Slime Soup",
+
+  "item.nutrition.goo_juice": "Goo Juice",
 
   "itemgroup.nutrition": "Nutrition"
 }

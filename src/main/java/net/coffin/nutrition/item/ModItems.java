@@ -1,5 +1,7 @@
 package net.coffin.nutrition.item;
 
+import net.coffin.nutrition.item.custom.GooJuiceItem;
+import net.coffin.nutrition.item.custom.JerkyItem;
 import net.coffin.nutrition.item.custom.MagmaCreamSoupItem;
 import net.coffin.nutrition.item.custom.SlimeSoupItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -22,7 +24,7 @@ public class ModItems {
             .maxCount(64)));
     public static final Item GOLDEN_BEETROOT = registerItem("golden_beetroot", new Item(new FabricItemSettings().food(ModFoodComponents.GOLDEN_BEETROOT)
             .maxCount(64)));
-    public static final Item JERKY = registerItem("jerky", new Item(new FabricItemSettings().food(ModFoodComponents.JERKY)
+    public static final Item JERKY = registerItem("jerky", new JerkyItem(new FabricItemSettings().food(ModFoodComponents.JERKY)
             .maxCount(64)));
     public static final Item NIBBLED_JERKY = registerItem("nibbled_jerky", new Item(new FabricItemSettings().food(ModFoodComponents.NIBBLED_JERKY)
             .maxCount(64)));
@@ -40,7 +42,7 @@ public class ModItems {
     public static final Item SLIME_SOUP = registerItem("slime_soup", new SlimeSoupItem(new FabricItemSettings().food(ModFoodComponents.SLIME_SOUP)
             .maxCount(16)));
 
-    public static final Item GOO_JUICE = registerItem("goo_juice", new SlimeSoupItem(new FabricItemSettings().food(ModFoodComponents.GOO_JUICE)
+    public static final Item GOO_JUICE = registerItem("goo_juice", new GooJuiceItem(new FabricItemSettings().food(ModFoodComponents.GOO_JUICE)
             .maxCount(16)));
 
     private static void addItemsToFoodItemGroup(FabricItemGroupEntries entries) {

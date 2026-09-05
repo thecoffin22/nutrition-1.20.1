@@ -99,7 +99,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(Items.BOWL)
                 .input(Items.MAGMA_CREAM)
                 .input(Items.MAGMA_CREAM)
-                .input(Items.MAGMA_CREAM)
+                .input(Items.BLAZE_POWDER)
                 .criterion(hasItem(Items.MAGMA_CREAM), conditionsFromItem(Items.MAGMA_CREAM))
                 .offerTo(exporter);
 

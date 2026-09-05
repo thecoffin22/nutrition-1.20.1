@@ -38,19 +38,16 @@ public class ModFoodComponents {
             .build();
 
     //Bowl
-    public static final FoodComponent MAGMA_CREAM_SOUP = createSmallStew(8)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20 * 120), 1.0f)
+    public static final FoodComponent MAGMA_CREAM_SOUP = createSmallStew(7)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20 * 60), 1.0f)
             .build();
 
-    public static final FoodComponent SLIME_SOUP = createSmallStew(8)
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20 * 16, 1), 1.0f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 16), 1.0f)
+    public static final FoodComponent SLIME_SOUP = createSmallStew(7)
             .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 20 * 8, 2), 0.05f)
             .build();
 
     //Bottles
-    public static final FoodComponent GOO_JUICE = new FoodComponent.Builder().hunger(5).saturationModifier(0.1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.JUMP_BOOST, 20 * 12, 0), 1.0f)
+    public static final FoodComponent GOO_JUICE = new FoodComponent.Builder().hunger(4).saturationModifier(0.1f)
             .build();
 
     private static FoodComponent.Builder createSmallStew(int hunger) {

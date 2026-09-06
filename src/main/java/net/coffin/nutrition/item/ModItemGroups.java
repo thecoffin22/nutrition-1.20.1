@@ -26,6 +26,10 @@ public class ModItemGroups {
                         entries.add(ModItems.COOKED_PUFFERFISH);
                         entries.add(ModItems.AXOLOTL);
                         entries.add(ModItems.COOKED_AXOLOTL);
+                        entries.add(ModItems.GLOW_CANDY);
+                        entries.add(ModItems.SWEET_CANDY);
+                        entries.add(ModItems.CHOCOLATE);
+                        entries.add(ModItems.POP_CRYSTALS);
 
                         entries.add(ModItems.MAGMA_CREAM_SOUP);
                         entries.add(ModItems.SLIME_SOUP);

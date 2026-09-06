@@ -20,6 +20,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> COOKED_TROPICAL_FISH_SMELTABLES = List.of(Items.TROPICAL_FISH);
     private static final List<ItemConvertible> COOKED_PUFFERFISH_SMELTABLES = List.of(Items.PUFFERFISH);
     private static final List<ItemConvertible> COOKED_AXOLOTL_SMELTABLES = List.of(ModItems.AXOLOTL);
+    private static final List<ItemConvertible> CHOCOLATE_SMELTABLES = List.of(Items.COCOA_BEANS);
 
     public ModRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -111,19 +112,53 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
                 .offerTo(exporter);
 
-        //Axolotl Bucket
+        //Vanilla Crafts
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, Items.AXOLOTL_BUCKET, 1)
                 .input(Items.WATER_BUCKET)
                 .input(ModItems.AXOLOTL)
                 .input(Items.GHAST_TEAR)
                 .criterion(hasItem(Items.GHAST_TEAR), conditionsFromItem(Items.GHAST_TEAR))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.COOKIE, 8)
+                .pattern("SRS")
+                .input('S', Items.WHEAT)
+                .input('R', ModItems.CHOCOLATE)
+                .criterion(hasItem(ModItems.CHOCOLATE), conditionsFromItem(ModItems.CHOCOLATE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.COOKIE)));
 
         //Bottled
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GOO_JUICE, 1)
                 .input(Items.GLASS_BOTTLE)
                 .input(Items.SLIME_BALL)
                 .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter);
+
+        //Candy
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.GLOW_CANDY, 1)
+                .input(Items.SUGAR)
+                .input(Items.GLOW_BERRIES)
+                .input(Items.GLOWSTONE_DUST)
+                .criterion(hasItem(Items.GLOW_BERRIES), conditionsFromItem(Items.GLOW_BERRIES))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SWEET_CANDY, 1)
+                .input(Items.SUGAR)
+                .input(Items.SWEET_BERRIES)
+                .criterion(hasItem(Items.SWEET_BERRIES), conditionsFromItem(Items.SWEET_BERRIES))
+                .offerTo(exporter);
+
+        //Chocolate
+        offerSmelting(exporter, CHOCOLATE_SMELTABLES, RecipeCategory.MISC, ModItems.CHOCOLATE,
+                0.7f, 200, "nutrition");
+        CookingRecipeJsonBuilder.createSmoking(Ingredient.ofItems(Items.COCOA_BEANS), RecipeCategory.FOOD, ModItems.CHOCOLATE, 0.15f, 100)
+                .criterion(hasItem(Items.COCOA_BEANS), conditionsFromItem(ModItems.AXOLOTL))
+                .offerTo(exporter, getRecipeName(ModItems.CHOCOLATE) + "_from_smoker");
+
+        //Pop Crystals
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.POP_CRYSTALS, 2)
+                .input(Items.GUNPOWDER)
+                .input(Items.SUGAR)
+                .input(Items.AMETHYST_SHARD)
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
                 .offerTo(exporter);
     }
 }

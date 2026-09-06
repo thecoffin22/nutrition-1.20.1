@@ -36,6 +36,14 @@ public class ModItems {
             .maxCount(64)));
     public static final Item COOKED_AXOLOTL = registerItem("cooked_axolotl", new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_AXOLOTL)
             .maxCount(64)));
+    public static final Item GLOW_CANDY = registerItem("glow_candy", new Item(new FabricItemSettings().food(ModFoodComponents.GLOW_CANDY)
+            .maxCount(64)));
+    public static final Item SWEET_CANDY = registerItem("sweet_candy", new Item(new FabricItemSettings().food(ModFoodComponents.SWEET_CANDY)
+            .maxCount(64)));
+    public static final Item CHOCOLATE = registerItem("chocolate", new Item(new FabricItemSettings().food(ModFoodComponents.CHOCOLATE)
+            .maxCount(64)));
+    public static final Item POP_CRYSTALS = registerItem("pop_crystals", new Item(new FabricItemSettings().food(ModFoodComponents.POP_CRYSTALS)
+            .maxCount(64)));
 
     public static final Item MAGMA_CREAM_SOUP = registerItem("magma_cream_soup", new MagmaCreamSoupItem(new FabricItemSettings().food(ModFoodComponents.MAGMA_CREAM_SOUP)
             .maxCount(16)));
@@ -55,6 +63,10 @@ public class ModItems {
         entries.add(COOKED_PUFFERFISH);
         entries.add(AXOLOTL);
         entries.add(COOKED_AXOLOTL);
+        entries.add(GLOW_CANDY);
+        entries.add(SWEET_CANDY);
+        entries.add(CHOCOLATE);
+        entries.add(POP_CRYSTALS);
 
         entries.add(MAGMA_CREAM_SOUP);
         entries.add(SLIME_SOUP);

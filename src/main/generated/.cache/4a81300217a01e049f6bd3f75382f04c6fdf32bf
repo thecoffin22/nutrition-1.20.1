@@ -1,10 +1,14 @@
-// 1.20.1	2026-09-05T09:39:09.0503322	Nutrition/Model Definitions
+// 1.20.1	2026-09-11T22:48:23.0957967	Nutrition/Model Definitions
 204b67962fe9d610ea05d9cfeee2546dbd17e1aa assets\nutrition\models\item\golden_potato.json
 92d42589085bef9f561e4d875ba2bd32db85a0be assets\nutrition\models\item\goo_juice.json
+98deadf539b93b39a93333e0abc8ede2908e45fa assets\nutrition\models\item\sweet_candy.json
+c789da81c5b92683941fe0352e372b72db5d6135 assets\nutrition\models\item\pop_crystals.json
 c6d8722398f522b93a7b87bd7151f3d903c5c291 assets\nutrition\models\item\cooked_tropical_fish.json
 b6b6ba45bb915651a3763f6a71e055a4ce22bcf8 assets\nutrition\models\item\light_golden_apple.json
 b0a23710a3340a6a20a77448ed90435946cbe8df assets\nutrition\models\item\magma_cream_soup.json
+2e5cf05033557fd6548537a28b989655f473122e assets\nutrition\models\item\glow_candy.json
 0d7158f85e1476756102da5433b45f995a59f94c assets\nutrition\models\item\axolotl.json
+431b0e4ace710f9226122cfea34a464075b127ff assets\nutrition\models\item\chocolate.json
 97a599d11af6eb5a1cfa7dec079e1c79adc09d0d assets\nutrition\models\item\cooked_pufferfish.json
 38595ed6348dc9e37e8599f59a5e9b7c6702e264 assets\nutrition\models\item\jerky.json
 fe25781fc4dfe0a1bbe49c244a3498e83c3a02d5 assets\nutrition\models\item\cooked_axolotl.json

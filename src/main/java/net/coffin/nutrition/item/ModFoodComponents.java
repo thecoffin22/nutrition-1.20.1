@@ -27,15 +27,12 @@ public class ModFoodComponents {
             .build();
 
     public static final FoodComponent COOKED_PUFFERFISH = new FoodComponent.Builder().hunger(5).saturationModifier(0.5f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 20 * 12), 0.05f)
             .build();
 
     public static final FoodComponent AXOLOTL = new FoodComponent.Builder().hunger(1).saturationModifier(0.1f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20 * 4, 0), 1.0f)
             .build();
 
     public static final FoodComponent COOKED_AXOLOTL = new FoodComponent.Builder().hunger(3).saturationModifier(0.4f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 20 * 4, 0), 1.0f)
             .build();
 
     public static final FoodComponent GLOW_CANDY = new FoodComponent.Builder().hunger(2).saturationModifier(0.1f)
@@ -53,7 +50,7 @@ public class ModFoodComponents {
 
     //Bowl
     public static final FoodComponent MAGMA_CREAM_SOUP = createSmallStew(7)
-            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20 * 15), 1.0f)
+            .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 20 * 20), 1.0f)
             .build();
 
     public static final FoodComponent SLIME_SOUP = createSmallStew(7)
@@ -65,6 +62,6 @@ public class ModFoodComponents {
             .build();
 
     private static FoodComponent.Builder createSmallStew(int hunger) {
-        return new FoodComponent.Builder().hunger(hunger).saturationModifier(0.7F);
+        return new FoodComponent.Builder().hunger(hunger).saturationModifier(0.75F);
     }
 }
